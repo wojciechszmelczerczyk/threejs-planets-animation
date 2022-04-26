@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com" rel="stylesheet"></script>
+
+    <title>Earth App</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Exo+2&family=Quicksand&family=Saira&display=swap");
+      * {
+        margin: 0;
+      }
+      .info {
+        background-color: black;
+      }
+
+      .info h1 {
+        margin-top: 20%;
+        color: white;
+        font-size: 35px;
+        font-family: "Exo 2";
+        text-align: center;
+      }
+
+      .info h2 {
+        color: white;
+        font-size: 25px;
+        font-family: "Exo 2";
+        text-align: center;
+        padding: 35px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <button class="previous-planet">Previous planet</button> -->
+    <div class="flex">
+      <div class="w-3/4">
+        <canvas></canvas>
+        <!-- <button class="next-planet">Next planet</button> -->
+      </div>
+
+      <div class="info flex flex-col w-1/4">
+        <h1 class="planet-name h-1/4" style="color: lightblue"></h1>
+        <div class="earth-params flex-grow flex flex-col"></div>
+      </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+    <script type="module" src="/data.js"></script>
+  </body>
+</html>
